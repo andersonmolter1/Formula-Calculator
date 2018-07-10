@@ -1,0 +1,112 @@
+﻿<Page
+    x:Class="Formu_Calc.quad"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Formu_Calc"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid BorderBrush="Black">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="178*"/>
+        </Grid.ColumnDefinitions>
+        <Button Content="Back" HorizontalAlignment="Left" Margin="10,558,0,0" VerticalAlignment="Top" Height="71" Width="150" FontSize="22" Grid.ColumnSpan="2" Click="Button_Click_1"/>
+        <Button Content="Clear" HorizontalAlignment="Left" Margin="1085.5,558,0,0" VerticalAlignment="Top" Height="71" Width="150" FontSize="22" Grid.Column="1" Click="Button_Click_2"/>
+        <TextBlock HorizontalAlignment="Left" Text="a" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1" Margin="125,83,0,0" FontSize="24"/>
+        <TextBox x:Name="text3" HorizontalAlignment="Left" Text="" VerticalAlignment="Top" Grid.Column="1" Margin="193.333,278,0,0" FontSize="24"/>
+        <TextBox x:Name="text2" HorizontalAlignment="Left" Text="" VerticalAlignment="Top" Grid.Column="1" Margin="193.333,180,0,0" FontSize="24"/>
+        <TextBox x:Name="text1" HorizontalAlignment="Left" Text="" VerticalAlignment="Top" Grid.Column="1" Margin="193.333,77,0,0" FontSize="24"/>
+        <TextBlock HorizontalAlignment="Left" Text="c" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1" Margin="128.333,272,0,0" FontSize="24"/>
+        <TextBlock HorizontalAlignment="Left" Text="b" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1" Margin="125.333,186,0,0" FontSize="24"/>
+        <TextBlock HorizontalAlignment="Left" Text="=" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1" Margin="153.333,186,0,0" FontSize="24"/>
+        <TextBlock HorizontalAlignment="Left" Text="=" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1" Margin="154.333,83,0,0" FontSize="24"/>
+        <TextBlock HorizontalAlignment="Left" Text="=" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1" Margin="153.333,278,0,0" FontSize="24"/>
+        <Button Content="Solve for x" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1" Margin="125.333,380,0,0" Click="Button_Click" Height="68" Width="171" FontSize="24"/>
+        <TextBox x:Name="text4" HorizontalAlignment="Left" Text="" VerticalAlignment="Top" Grid.Column="1" Margin="980.333,191,0,0" FontSize="24"/>
+        <TextBox x:Name="text5" HorizontalAlignment="Left" Text="" VerticalAlignment="Top" Grid.Column="1" Margin="974.333,402,0,0" FontSize="24"/>
+        <TextBlock HorizontalAlignment="Left" Text="x1" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1" Margin="893.333,203,0,0" FontSize="24"/>
+        <TextBlock HorizontalAlignment="Left" Text="=" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1" Margin="923.333,203,0,0" FontSize="24"/>
+        <TextBlock HorizontalAlignment="Left" Text="x2" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1" Margin="887.333,414,0,0" FontSize="24"/>
+        <TextBlock HorizontalAlignment="Left" Text="=" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1" Margin="917.333,414,0,0" FontSize="24"/>
+        <TextBox Grid.Column="1" HorizontalAlignment="Left" Margin="494.333,387,0,0" Text="________________________" VerticalAlignment="Top" FontSize="36" FocusVisualSecondaryBrush="#99FFFFFF" BorderBrush="#66FFFFFF" Height="81" Width="631">
+            <TextBox.FocusVisualPrimaryBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBox.FocusVisualPrimaryBrush>
+        </TextBox>
+        <TextBlock HorizontalAlignment="Left" Text="√" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1" Margin="584.333,377,0,0" FontSize="48" FocusVisualSecondaryBrush="#99000000" FocusVisualPrimaryBrush="Black" Height="87" Width="41"/>
+        <TextBox Grid.Column="1" HorizontalAlignment="Left" Margin="595.333,346,0,0" Text="________________" VerticalAlignment="Top" FontSize="36" FocusVisualSecondaryBrush="#99FFFFFF" BorderBrush="#66FFFFFF" Height="81" Width="350">
+            <TextBox.FocusVisualPrimaryBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBox.FocusVisualPrimaryBrush>
+        </TextBox>
+        <TextBlock HorizontalAlignment="Left" Text="-" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1" Margin="565.333,388,0,0" FontSize="36" Height="65" Width="19"/>
+        <TextBlock HorizontalAlignment="Left" Text="(" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1" Margin="626.333,401,0,0" FontSize="24" Height="43" Width="10"/>
+        <TextBlock HorizontalAlignment="Left" Text=")" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1" Margin="672.333,401,0,0" FontSize="24" Height="43" Width="9"/>
+        <TextBlock x:Name="text11" HorizontalAlignment="Left" Margin="641.333,404,0,0" Text="b" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1" Width="31" Height="25" FontSize="22" TextTrimming="None"/>
+        <TextBlock HorizontalAlignment="Left" Text="2" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1" Margin="676.333,398,0,0" FontSize="9" Height="33" Width="11"/>
+        <TextBlock HorizontalAlignment="Left" Text="-" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1" Margin="696.333,390,0,0" FontSize="36" Height="65" Width="19"/>
+        <TextBlock x:Name="text333" HorizontalAlignment="Left" Text="c" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1" Margin="808.333,402,0,0" FontSize="24"/>
+        <TextBlock x:Name="text2222" HorizontalAlignment="Left" Text="a" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1" Margin="758.333,402,0,0" FontSize="24"/>
+        <TextBlock HorizontalAlignment="Left" Text="4" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1" Margin="725.333,402,0,0" FontSize="24"/>
+        <TextBlock x:Name="text11111" HorizontalAlignment="Left" Text="b" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1" Margin="530.333,400,0,0" FontSize="24"/>
+        <TextBlock HorizontalAlignment="Left" Text="-" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1" Margin="505.333,388,0,0" FontSize="36" Height="65" Width="19"/>
+        <TextBlock HorizontalAlignment="Left" Text="2" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1" Margin="680.333,442,0,0" FontSize="24"/>
+        <TextBlock HorizontalAlignment="Left" Text="(" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1" Margin="746.333,399,0,0" FontSize="24" Height="43" Width="10"/>
+        <TextBlock HorizontalAlignment="Left" Text="(" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1" Margin="796.333,399,0,0" FontSize="24" Height="43" Width="10"/>
+        <TextBlock HorizontalAlignment="Left" Text=")" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1" Margin="775.333,399,0,0" FontSize="24" Height="43" Width="10"/>
+        <TextBlock HorizontalAlignment="Left" Text=")" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1" Margin="828.333,399,0,0" FontSize="24" Height="43" Width="10"/>
+        <TextBlock HorizontalAlignment="Left" Text="(" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1" Margin="518.333,396,0,0" FontSize="24" Height="43" Width="10"/>
+        <TextBlock HorizontalAlignment="Left" Text=")" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1" Margin="549.333,395,0,0" FontSize="24" Height="43" Width="10"/>
+        <TextBox Grid.Column="1" HorizontalAlignment="Left" Margin="494.333,175,0,0" Text="________________________" VerticalAlignment="Top" FontSize="36" FocusVisualSecondaryBrush="#99FFFFFF" BorderBrush="#66FFFFFF" Height="81" Width="631">
+            <TextBox.FocusVisualPrimaryBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBox.FocusVisualPrimaryBrush>
+        </TextBox>
+        <TextBlock HorizontalAlignment="Left" Text="√" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1" Margin="582.333,164,0,0" FontSize="48" FocusVisualSecondaryBrush="#99000000" FocusVisualPrimaryBrush="Black" Height="87" Width="41"/>
+        <TextBox Grid.Column="1" HorizontalAlignment="Left" Margin="595.333,134,0,0" Text="________________" VerticalAlignment="Top" FontSize="36" FocusVisualSecondaryBrush="#99FFFFFF" BorderBrush="#66FFFFFF" Height="81" Width="350">
+            <TextBox.FocusVisualPrimaryBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBox.FocusVisualPrimaryBrush>
+        </TextBox>
+        <TextBlock HorizontalAlignment="Left" Text="+" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1" Margin="562.333,176,0,0" FontSize="36" Height="65" Width="19"/>
+        <TextBlock HorizontalAlignment="Left" Text="(" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1" Margin="625.333,189,0,0" FontSize="24" Height="43" Width="10"/>
+        <TextBlock HorizontalAlignment="Left" Text=")" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1" Margin="672.333,189,0,0" FontSize="24" Height="43" Width="9"/>
+        <TextBlock x:Name="text111" HorizontalAlignment="Left" Margin="641.333,192,0,0" Text="b" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1" Width="31" Height="25" FontSize="22" TextTrimming="None"/>
+        <TextBlock HorizontalAlignment="Left" Text="2" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1" Margin="676.333,186,0,0" FontSize="9" Height="33" Width="11"/>
+        <TextBlock HorizontalAlignment="Left" Text="-" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1" Margin="696.333,178,0,0" FontSize="36" Height="65" Width="19"/>
+        <TextBlock x:Name="text33" HorizontalAlignment="Left" Text="c" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1" Margin="808.333,190,0,0" FontSize="24"/>
+        <TextBlock x:Name="text22" HorizontalAlignment="Left" Text="a" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1" Margin="758.333,190,0,0" FontSize="24"/>
+        <TextBlock HorizontalAlignment="Left" Text="4" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1" Margin="725.333,191,0,0" FontSize="24"/>
+        <TextBlock x:Name="text1111" HorizontalAlignment="Left" Text="b" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1" Margin="530.333,188,0,0" FontSize="24"/>
+        <TextBlock HorizontalAlignment="Left" Text="-" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1" Margin="505.333,176,0,0" FontSize="36" Height="65" Width="19"/>
+        <TextBlock HorizontalAlignment="Left" Text="2" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1" Margin="680.333,230,0,0" FontSize="24"/>
+        <TextBlock HorizontalAlignment="Left" Text="(" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1" Margin="743.333,188,0,0" FontSize="24" Height="43" Width="10"/>
+        <TextBlock HorizontalAlignment="Left" Text="(" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1" Margin="796.333,187,0,0" FontSize="24" Height="43" Width="10"/>
+        <TextBlock HorizontalAlignment="Left" Text=")" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1" Margin="779.333,188,0,0" FontSize="24" Height="43" Width="10"/>
+        <TextBlock HorizontalAlignment="Left" Text=")" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1" Margin="827.333,187,0,0" FontSize="24" Height="43" Width="10"/>
+        <TextBlock HorizontalAlignment="Left" Text="(" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1" Margin="522.333,186,0,0" FontSize="24" Height="43" Width="10"/>
+        <TextBlock HorizontalAlignment="Left" Text=")" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1" Margin="555.333,186,0,0" FontSize="24" Height="43" Width="10"/>
+        <TextBlock x:Name="text22222" HorizontalAlignment="Left" Text="a" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1" Margin="708.333,442,0,0" FontSize="24"/>
+        <TextBlock HorizontalAlignment="Left" Text="(" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1" Margin="696.333,442,0,0" FontSize="24" Height="43" Width="10"/>
+        <TextBlock HorizontalAlignment="Left" Text=")" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1" Margin="731.333,442,0,0" FontSize="24" Height="43" Width="10"/>
+        <TextBlock HorizontalAlignment="Left" Text="(" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1" Margin="696.333,228,0,0" FontSize="24" Height="43" Width="10"/>
+        <TextBlock HorizontalAlignment="Left" Text=")" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1" Margin="731.333,228,0,0" FontSize="24" Height="43" Width="10"/>
+        <TextBlock x:Name="text222" HorizontalAlignment="Left" Text="a" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1" Margin="708.333,231,0,0" FontSize="24"/>
+
+    </Grid>
+</Page>
