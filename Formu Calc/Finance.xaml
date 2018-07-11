@@ -12,6 +12,7 @@
         <Button Content="Back" HorizontalAlignment="Left" Margin="10,558,0,0" VerticalAlignment="Top" Height="71" Width="150" FontSize="22" Click="Button_Click"/>
         <Button Content="Clear" HorizontalAlignment="Left" Margin="1120,558,0,0" VerticalAlignment="Top" Height="71" Width="150" FontSize="22"/>
         <Button Content="Compound &#xD;&#xA;   Interest" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="185" Width="308" Background="{ThemeResource SystemControlHighlightListAccentLowBrush}" FontSize="36" FontWeight="Bold" AutomationProperties.PositionInSet="-1" IsTapEnabled="False" IsRightTapEnabled="False" Click="Button_Click_6"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="406,54,0,0" VerticalAlignment="Top" Height="185" Width="308" Background="{ThemeResource SystemControlHighlightListAccentLowBrush}" FontSize="36" FontWeight="Bold" AutomationProperties.PositionInSet="-1" IsTapEnabled="False" IsRightTapEnabled="False"/>
 
     </Grid>
 </Page>
